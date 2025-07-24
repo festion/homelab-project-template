@@ -1,0 +1,93 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "",
+    "description": "",
+    "type": "generic",
+    "language": "javascript",
+    "author": "",
+    "license": "MIT"
+  },
+  "mcp": {
+    "servers": "all",
+    "customPaths": {},
+    "configuration": {
+      "filesystem": {
+        "enabled": true,
+        "allowedDirectories": [".", "./src", "./docs", "./scripts"]
+      },
+      "networkFs": {
+        "enabled": true,
+        "shares": {}
+      },
+      "serenaEnhanced": {
+        "enabled": true
+      },
+      "github": {
+        "enabled": true,
+        "defaultOrg": ""
+      },
+      "codeLinter": {
+        "enabled": true
+      },
+      "directoryPolling": {
+        "enabled": true,
+        "watchDirectories": ["./src", "./api", "./dashboard"]
+      },
+      "homeAssistant": {
+        "enabled": true,
+        "apiUrl": "",
+        "tokenPath": ""
+      },
+      "proxmox": {
+        "enabled": true,
+        "host": "",
+        "user": "",
+        "passwordPath": ""
+      },
+      "truenas": {
+        "enabled": true,
+        "host": "",
+        "apiKeyPath": ""
+      },
+      "wikijs": {
+        "enabled": true,
+        "url": "",
+        "apiKeyPath": ""
+      }
+    }
+  },
+  "github": {
+    "useTemplates": true,
+    "workflowSync": true,
+    "issueTemplates": true,
+    "prTemplates": true
+  },
+  "structure": {
+    "api": {
+      "enabled": false,
+      "framework": "express",
+      "language": "javascript"
+    },
+    "dashboard": {
+      "enabled": false,
+      "framework": "react",
+      "language": "javascript"
+    },
+    "documentation": {
+      "enabled": true,
+      "format": "markdown"
+    },
+    "scripts": {
+      "enabled": true,
+      "shell": "bash"
+    }
+  },
+  "features": {
+    "linting": true,
+    "testing": false,
+    "cicd": true,
+    "docker": false,
+    "monitoring": false
+  }
+}

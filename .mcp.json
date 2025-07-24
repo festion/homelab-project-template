@@ -1,0 +1,69 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."],
+      "env": {}
+    },
+    "network-fs": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-network-fs"],
+      "env": {}
+    },
+    "serena-enhanced": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-serena-enhanced"],
+      "env": {}
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "code-linter": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-code-linter"],
+      "env": {}
+    },
+    "directory-polling": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-directory-polling"],
+      "env": {}
+    },
+    "home-assistant": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-home-assistant"],
+      "env": {
+        "HA_URL": "${HA_URL}",
+        "HA_TOKEN": "${HA_TOKEN}"
+      }
+    },
+    "proxmox-mcp": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-proxmox"],
+      "env": {
+        "PROXMOX_HOST": "${PROXMOX_HOST}",
+        "PROXMOX_USER": "${PROXMOX_USER}",
+        "PROXMOX_PASSWORD": "${PROXMOX_PASSWORD}"
+      }
+    },
+    "truenas": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-truenas"],
+      "env": {
+        "TRUENAS_HOST": "${TRUENAS_HOST}",
+        "TRUENAS_API_KEY": "${TRUENAS_API_KEY}"
+      }
+    },
+    "wikijs-mcp": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-wikijs"],
+      "env": {
+        "WIKIJS_URL": "${WIKIJS_URL}",
+        "WIKIJS_API_KEY": "${WIKIJS_API_KEY}"
+      }
+    }
+  }
+}
