@@ -45,8 +45,7 @@
       "args": ["-y", "@modelcontextprotocol/server-proxmox"],
       "env": {
         "PROXMOX_HOST": "${PROXMOX_HOST}",
-        "PROXMOX_USER": "${PROXMOX_USER}",
-        "PROXMOX_PASSWORD": "${PROXMOX_PASSWORD}"
+        "PROXMOX_TOKEN": "${PROXMOX_TOKEN}"
       }
     },
     "truenas": {
